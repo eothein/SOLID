@@ -5,7 +5,6 @@ package s.optimized
  */
 class BookPrinter : Printer {
 
-
     override fun print(printable: Printable) {
         println(printable.content)
     }

@@ -5,5 +5,5 @@ package s.optimized
  */
 interface Printable {
 
-    val content: String?
+    val content: String
 }
