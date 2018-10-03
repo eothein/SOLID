@@ -1,13 +1,12 @@
 package o
 
-class AreaCalculator{
+class AreaCalculator {
 
-    fun calculateArea(shapes : MutableCollection<Rectangle>) : Unit {
-        var area = 0
-        for (rectangle in shapes){
-            area += rectangle.height * rectangle.width
+    fun calculateArea(shapes: Collection<Shape>): Double {
+        var area = 0.0
+        for (shape in shapes) {
+            area += shape.calculateArea()
         }
-        println("The calculated area is : $area")
+        return area
     }
-
 }
