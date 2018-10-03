@@ -1,21 +1,9 @@
 package i
 
-class DesktopComponent : Component {
+class DesktopComponent : MouseUIComponent {
 
     override fun mouseover(event: String) {
         println("Mouse click Event Fired")
-
-    }
-
-    override fun touch(event: String) {
-        throw UnsupportedOperationException("touch not supported the screen is not supported")
-
-
-    }
-
-    override fun swipe(event: String) {
-        throw UnsupportedOperationException("swipe not supported")
-
 
     }
 
