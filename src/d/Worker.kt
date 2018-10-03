@@ -1,14 +1,8 @@
 package d
 
-class Worker(name: String) {
+class Worker(var name: String) : IWorker {
 
-    var name : String
-
-    init {
-        this.name = name;
-    }
-
-    fun work(){
+    override fun work() {
         println("$name is working hard!")
     }
 }

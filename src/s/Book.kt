@@ -1,13 +1,14 @@
 package s
 
 /**
- * This class defines a s.book.
- *
- *
- * A class in Kotlin can have a primary constructor which is part of the class header.
+ * This class defines a book.
  */
 
-class Book(private val bookData: BookData) {
+class Book(private val bookData: BookData) : Printable {
+
+    override fun getContent(): String {
+        return bookData.text
+    }
 
 
     /**

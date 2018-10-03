@@ -2,23 +2,15 @@ package d
 
 /**
  * Manager class. Manages only 1 worker for simplicity reasons.
+ *
+ * @param worker The worker the manager manages
  */
-class Manager(worker : Worker) {
-
-    /**
-     * We create a property which holds the worker
-     * the manager manages.
-     */
-    var worker :Worker
-
-    init {
-        this.worker = worker
-    }
+class Manager(var worker: IWorker) {
 
     /**
      * Manages its worker
      */
-    fun manage(){
+    fun manage() {
         worker.work()
     }
 }
